@@ -8,7 +8,7 @@ connectToMongo();
 app.use(express.json())
  
 app.use(cors({
-    origin :"https://i-notebook-frontend-kappa.vercel.app/"
+    origin :"https://i-notebook-frontend-kappa.vercel.app"
 })) 
 // respond with "hello world" when a GET request is made to the homepage
 // app.get('/', (req, res) => {
