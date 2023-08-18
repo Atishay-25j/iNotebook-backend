@@ -23,8 +23,9 @@ const fetchuser = async (req, res, next) => {
                     console.log("In verify", err);
                 }
                 console.log(verified, "in verified")
-                console.log(data);
+                console.log(verified.user);
                 req.user = verified.user;
+                console.log(req.user);
                 console.log("Next");
                 next()
             }
