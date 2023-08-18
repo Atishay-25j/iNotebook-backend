@@ -20,9 +20,10 @@ const fetchuser = (req, res, next) => {
             JWT_SECRET,
             (err, verified) => {
               if (err) {
-                return res.status(401).json("Not verified" ,err);
+                console.log("In verify",err);
+                // return res.status(401).json("Not verified" ,err);
               }
-              return verified;
+              console.log(verified,"in verified")
             }
           );;
         console.log(data);
